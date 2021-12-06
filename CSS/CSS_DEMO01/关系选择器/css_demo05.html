@@ -9,17 +9,30 @@
     <style>
         /* 
             子元素选择器：选定父元素指定的子元素
+
         */
+    
         div > span{
             color: olive;
+        }
+        div > p > span{
+            font-size: 102px;
         }
         /* 
             后代选择器：可以选中指定元素内的后代
         */
         div span{
             color: red;
-            font-size: 100px;
+            font-size: 10px;
         }
+        /* 
+            兄弟选择器：找紧挨着的兄弟元素+
+                       找后面所有的兄弟元素~
+        */
+        p + span{
+            font-size: 30px;
+        }
+        
     </style>
 </head>
 

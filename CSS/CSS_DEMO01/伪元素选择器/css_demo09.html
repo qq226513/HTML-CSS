@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-letter{
+            color: blue;
+        }
+        p::first-line{
+            color: brown;
+            background-color: beige;
+        }
+        p::selection{
+            background-color: aquamarine;
+        }
+        div::before{
+            content: 'fsdaf';
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        伪元素：表示页面中并不是真实存在的元素（特殊的位置）
+            一般用::开头
+                -::first-letter 表示第一个字母
+                -::first-line   表示第一行
+                -::selection    表示选中的内容
+                -::before       表示元素的开头
+                -::after        表示元素的结尾
+     -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ipsa minus vel obcaecati delectus eaque voluptatum eius? Voluptas ea, magnam velit ipsum commodi obcaecati labore eos, ut saepe a eaque?
+    </p>
+    <div>日日</div>
+</body>
+</html>

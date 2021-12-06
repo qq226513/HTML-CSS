@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link {
+            color: aqua;
+        }
+
+        a:visited {
+            color: beige;
+        }
+
+        a[href="https://www.360.com"]:hover {
+            color: red;
+            font-size: 50px;
+        }
+
+        a[href="https://www.lenove.com"]:active {
+            color: yellow;
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        超链接的伪类
+            -:link 表示没访问过的链接
+            -:visited 表示访问过的链接 由于隐私原因只能改颜色
+            -:hover 表示鼠标移入
+            -:active 表示鼠标点击
+     -->
+
+    <a href="https://www.baidu.com">百度</a>
+    <a href="https://www.qq.com">QQ</a>
+    <a href="https://www.weibo.com">微博</a>
+    <a href="https://www.360.com">360</a>
+    <a href="https://www.lenove.com">联想</a>
+</body>
+
+</html>
