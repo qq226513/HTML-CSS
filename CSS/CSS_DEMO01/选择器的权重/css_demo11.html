@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            color: red;
+        }
+
+        .red {
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        样式的冲突
+            -当我们通过不同的选择器选中相同的元素 且为相同的样式设置不同的值 此时发生冲突
+            -发生样式冲突时，由选择器的权重决定
+        
+        选择器的权重  优先级逐渐降低
+            内联样式(style属性)       1000  
+            id选择器(id属性)          100
+            class选择器 伪类选择器     10
+            元素选择器(标签类型)       1
+            通配选择器                0
+            继承的样式                没有优先级
+
+        
+        权重比较时会将所有选择器相加计算，最后比较优先级
+        并集选择器是单独计算的
+        选择器的累计不会超过最大的数量级 即：class选择器累加再多也不会超过id选择器
+        如果优先级计算后相等 则优先使用 靠下 的样式
+
+        可以在某个样式中 添加!important 此时获得最高优先级
+     -->
+    <div id="box1" class="red">我是box1</div>
+</body>
+
+</html>
