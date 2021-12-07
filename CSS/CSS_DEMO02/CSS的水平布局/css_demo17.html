@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            width: 800px;
+            height: 200px;
+            border: 10px red solid;
+
+        }
+        .inner{
+            width: 200px;
+            height: 200px;
+            background-color: wheat;
+        }
+        /* 
+            元素水平方向的布局：
+                元素在其父元素中水平方向的位置由以下几个属性共同决定
+                    margin-left
+                    border-left
+                    padding-left
+                    width
+                    padding-right
+                    border-right
+                    margin-right
+                
+                一个元素在其父元素中 他的布局必须满足
+                    以上全部内容相加 = 其父元素内容区的宽度
+                    如果计算结果不满足 则称为过渡约束 在没有auto的情况下等式会自动调整margin-right补值
+                    七个值中有三个值可以设置为auto
+                    width 
+                    margin-left
+                    margin-right
+                    如果计算结果不满足 则自动调整auto的值
+                    有多个auto值优先设置width的值
+                    --经常使用将margin-lefg和margin-right设为auto来使元素在父元素中居中
+
+        */
+    </style>
+</head>
+<body>
+    <!-- 
+
+     -->
+    <div class="outer">
+        <div class="inner">
+
+        </div>
+    </div>
+</body>
+</html>

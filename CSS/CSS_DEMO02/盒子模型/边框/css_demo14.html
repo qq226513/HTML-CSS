@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            /* 
+                border-width会有个默认值
+                border-width可以分别为不同边设置不同值 顺序是‘上右下左’
+                三个值 -- 上 左右 下
+                两个值 -- 上下  左右
+                除了border-width 还有一组 border-xxx-width
+                xxx = top right bottom left（上右下左）
+                ---color style也有一组这样的值
+
+
+                border-color如果不写则会自动使用color的值
+
+                border-style的默认值是none 不写就没有边框
+            */
+
+            border-width: 10px;
+            border-color: royalblue;
+            border-style: solid;
+
+            /* 
+                border简写属性 通过该属性可以设置边框所有的格式
+                可以用border-xxx来为单边设置属性
+                xxx = top right bottom left（上右下左）
+            */
+            border: 10px royalblue solid;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+</body>
+
+</html>
